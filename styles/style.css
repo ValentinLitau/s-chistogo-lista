@@ -1,15 +1,14 @@
 body {
   margin: 0 auto;
+  background-color: #1e1e1e;
   padding: 0;
   background: var(--black-bg, #131313);
-  width: 360px;
-  height: 4160px;
+  width: 100%;
+  max-width: 360px;
 }
 
 .header {
   display: flex;
-  width: 360px;
-  height: 132px;
   justify-content: space-between;
 }
 
@@ -32,31 +31,32 @@ body {
   line-height: 19.2px;
 }
 
-.header__menu-link {
+.header__menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header__menu-link_active {
+  width: 100%;
+  max-width: 44px;
+  text-decoration: none;
+  border-bottom: #F5F5F5 solid  1px;
   color: var(--text-light, #f5f5f5);
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
 }
 
-.header__menu-link_main {
-  height: 20px;
-  width: 64px;
-}
-.header__menu-link_about {
-  height: 20px;
-  width: 44px;
-  text-decoration: none;
-  border-bottom: #F5F5F5 solid  1px;
-}
-
-.header__menu-link_contacts {
-  height: 20px;
-  width: 75px;
-  text-decoration: none;
-  border-bottom: #F5F5F5 solid  1px;
+.header__menu-link_active:hover {
+  opacity: 0.4;
 }
 
 .cover {
-  width: 340px;
-  height: 221px;
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  min-height: 221px;
   background-image: url(../images/cover.svg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -64,9 +64,7 @@ body {
   margin-top: 7px;
 }
 
-.accent-span {
-  width: 339px;
-  height: 198px;
+.cover__title {
   color: #fff;
   font-family: EB Garamond, Arial, Helvetica, sans-serif;
   font-size: 72px;
@@ -75,34 +73,27 @@ body {
   line-height: 100%;
 }
 
-.cover-title {
-  text-align: left;
+.accent-span {
   display: block;
-  margin-right: 288px;
-  margin-left: 1px;
 }
 
 .text-center {
-  text-align: center;
   display: block;
-  width: 226px;
-  height: 72px;
-  margin-right: 67px;
-  margin-left: 46px;
+  text-align: center;
+  padding-left: 46px;
+  padding-right: 67px;
 }
 
 .text-right {
-  text-align: right;
   display: block;
-  width: 161px;
-  height: 72px;
-  margin-right: 24px;
-  margin-left: 154px;
+  text-align: right;
+  padding-left: 154px;
+  padding-right: 24px;
 }
 
 .intro {
-  width: 320px;
-  height: 453px;
+  width: 100%;
+  max-width: 320px;
   margin: 30px 20px 38px 20px;
 }
 
@@ -118,6 +109,13 @@ body {
 
 .intro__title {
   margin: 0px auto 0px 0px;
+  color: var(--text-gray, #ccc);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
 }
 
 .intro__date {
@@ -140,8 +138,8 @@ body {
 
 .reasons {
   background: var(--yellow-bg, #fee42a);
-  width: 320px;
-  height: 1288px;
+  width: 100%;
+  max-width: 320px;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -159,14 +157,9 @@ body {
 }
 
 .reasons__text-right {
-  width: 320px;
-  height: 31.5px;
+  width: 100%;
+  max-width: 320px;
   text-align: right;
-}
-
-.reaasons__text-left {
-  width: 320px;
-  height: 31.5px;
 }
 
 .content-section__introduction {
@@ -176,17 +169,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  width: 320px;
-  height: 297px;
-}
-
-.content-section__list {
-  width: 304px;
-  padding-left: 17px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .content-section__list-item {
   display: flex;
+  width: 100%;
+  max-width: 304px;
+  padding-left: 17px;
   flex-direction: column;
   gap: 16px;
   color: var(--black-bg, #131313);
@@ -208,8 +199,8 @@ body {
 
 .how-to {
   background: var(--black-bg, #131313);
-  width: 320px;
-  height: 1749px;
+  width: 100%;
+  max-width: 320px;
   padding: 40px 20px 0px 20px;
   display: inline-flex;
   flex-direction: column;
@@ -217,21 +208,22 @@ body {
 }
 
 .how-to .accent-span {
+  display: block;
   color: #f5f5f5;
   font-family: EB Garamond, Arial, Helvetica, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: 115%;
-  width: 320px;
-  height: 64px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .how-to .accent-span .text-right {
-  width: 320px;
-  height: 32px;
+  width: 100%;
+  max-width: 320px;
   text-align: right;
-  margin: 0;
+  padding: 0;
 }
 
 .how-to .content-section__subtitle {
@@ -241,8 +233,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
-  width: 320px;
-  height: 135px;
+  width: 100%;
+  max-width: 320px;
 }
 
 .card-list {
@@ -257,21 +249,22 @@ body {
   flex-direction: column;
   gap: 8px;
   padding: 20px 20px;
+  border-radius: 30px;
 }
 
 .card_theme_dark {
-  border-radius: 30px;
   background: var(--gray-bg, #343434);
 }
+
 .card__author-photo {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .card__author-name {
   color: #f5f5f5;
-  font-family: Inter;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -302,6 +295,7 @@ body {
   gap: 8px;
   padding: 20px 20px;
 }
+
 .card_text-only .card__title {
   color: var(--black-bg, #131313);
   font-family: EB Garamond, Arial, Helvetica, sans-serif;
@@ -310,6 +304,7 @@ body {
   font-weight: 500;
   line-height: 135%;
 }
+
 .card_text-only .card__text {
   color: var(--black-bg, #131313);
   font-family: Inter, Arial, Helvetica, sans-serif;
@@ -320,14 +315,14 @@ body {
 }
 
 .card_theme_bright {
-  border-radius: 30px;
   background: var(--yellow-bg, #fee42a);
+  border-radius: 30px;
 }
 
 .content-section_footer {
-  box-sizing: content-box;
   display: flex;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   margin-top: 60px;
   padding: 20px;
   justify-content: space-between;
@@ -350,21 +345,19 @@ body {
   gap: 16px;
 }
 
-.link__vk {
+.social__links {
   color: #F5F5F5;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 17.5px */
+  text-decoration: none;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
 }
 
-.link__youtube {
-  color: #F5F5F5;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 17.5px */
+.social__links:hover {
+  opacity: 0.4;
 }
-
