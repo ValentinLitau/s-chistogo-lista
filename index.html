@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>С чистого листа</title>
     <meta name="author" content="Литау Валентин">
-    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
@@ -16,35 +16,34 @@
           src="./images/logo.svg"
           alt="логотип Вёрстка">
       </a>
-
       <nav class="header__menu">
-        <nav class="header__menu-item">
-          <a class="header__menu-link header__menu-link_main">Главная</a>
-        </nav>
-        <nav class="header__menu-item header__menu-item_active">
-          <a class="header__menu-link header__menu-link_about" href="#0">О нас</a>
-        </nav>
-        <nav class="header__menu-item header__menu-item_active">
-          <a class="header__menu-link header__menu-link_contacts" href="#0">Контакты</a>
-        </nav>
+        <ul class="header__menu-item">
+          <p>Главная</p>
+        </ul>
+        <ul class="header__menu-item">
+          <a class="header__menu-link_active" href="#0">О нас</a>
+        </ul>
+        <ul class="header__menu-item">
+          <a class="header__menu-link_active" href="#0">Контакты</a>
+        </ul>
       </nav>
     </header>
     <main>
       <section class="cover">
-        <h1 class="accent-span">
-          <span class="cover-title">С</span>
+        <h1 class="cover__title">
+          <span class="accent-span">С</span>
           <span class="text-center">чистого</span>
           <span class="text-right">листа</span>
         </h1>
         </section>
-      <section class="intro">
-        <section class="intro__heading">
-          <p class="intro__title">
+      <div class="intro">
+        <div class="intro__heading">
+          <h2 class="intro__title">
             8 способов борьбы со страхом чистого листа
-          </p>
+          </h2>
           <time class="intro__date" datetime="2022-06-05">05.06.2022 г.</time>
-        </section>
-        <section class="intro__main-text">
+        </div>
+        <div class="intro__main-text">
           <p>
             Начинать что-то новое — тяжело и страшно. Даже если это
             просто небольшой фрагмент кода. Или текст. Например,
@@ -60,25 +59,19 @@
             что-то новое) — нормальная реакция мозга. Разберёмся,
             почему это происходит.
           </p>
-        </section>
-      </section>
+        </div>
+      </div>
       <section class="reasons">
-        <section class="content-section__subtitle">
-          <section class="reasons__text-right">
-            <span>Почему чистый лист</span>
-          </section>
-          <section class="reasons__text-left">
-            <span>&mdash; такой страшный?</span>
-          </section>
-        </section>
-        <section class="content-section__introduction">
-          <p>Сам по себе чистый лист, конечно, не страшный. 
+        <h2 class="content-section__subtitle">
+            <p class="reasons__text-right">Почему чистый лист</p>
+            <p>&mdash; такой страшный?</p>
+        </h2>
+          <p class="content-section__introduction">Сам по себе чистый лист, конечно, не страшный. 
             Боимся мы чаще всего объёма работы, которую предстоит сделать.  
             Усилия, той точки, которую нужно преодолеть, чтобы переключить мозг из состояния паники в состояние потока.  
             Причин, почему первые усилия даются так сложно, может быть очень много. 
-            Вот основные:</p>
-        </section>
-        <section class="content-section__list">
+            Вот основные:
+          </p>
             <ul class="content-section__list-item">
               <li>
                 <span class="content-section__list-accent">
@@ -130,28 +123,25 @@
                 Вам может казаться, что каждая строчка — глупость, 
                 и вообще всё, что вы сделаете, — будет неправильно.
               </li>
-            </ul>
-          </section>
+            </ul>  
       </section>
       <section class="how-to">
-         <section class="accent-span">
+         <h2 class="accent-span">
             <span class="text-right">Как всё-таки начать</span>
-            <span class="text-left">что-то делать</span>
-          </section>
-          <section class="content-section__subtitle">
-            <p>
+            <span>что-то делать</span>
+          </h2>  
+            <p class="content-section__subtitle">
               Чаще всего страх чистого 
                листа появляется не из-за чего- то одного, 
               а из-за совокупности нескольких факторов. 
               Вот что может помочь:
             </p>
-          </section>
             <ul class="card-list">
             <li>
               <article class="card card_theme_dark">
-                  <img class="card__author-photo" src="./images/polyarinov.png" alt="Алексей Поляринов">
+                  <img class="card__author-photo" src="./images/polyarinov.png" alt="Поляринов Алексей">
                   <p class="card__author-name">Алексей Поляринов</p>
-                  <p class="card__title">Начать любыми словами</p>
+                  <h3 class="card__title">Начать любыми словами</h3>
                   <p class="card__text">
                 Любыми — без шуток. 
                 Если не верите нам, посмотрите, например, 
@@ -167,7 +157,7 @@
             </li>
             <li>
               <article class="card_text-only card_theme_bright">
-                <p class="card__title">Поставить перед собой рамку для фотографии</p>
+                <h3 class="card__title">Поставить перед собой рамку для фотографии</h3>
                 <p class="card__text">
                   Самую обычную: 10 на 15 сантиметров.
                    Уже от одного ощущения, 
@@ -182,9 +172,9 @@
             </li>
             <li>
                 <article class="card card_theme_dark">
-                  <img class="card__author-photo" src="./images/bunin.png" alt="Иван Бунин">
+                  <img class="card__author-photo" src="./images/bunin.png" alt="Бунин Иван">
                   <p class="card__author-name">Иван Бунин</p>
-                  <p class="card__title">Сделать из задачи рутину</p>
+                  <h3 class="card__title">Сделать из задачи рутину</h3>
                   <p class="card__text">
                     «Писать стихи нужно каждый день,
                     подобно тому как скрипач или пианист 
@@ -204,13 +194,11 @@
          </section>
     </main>
         <footer class="content-section_footer">
-            <section class="footer__copy">
-                <p class="copy__logo">© VЁRSTKA</p>
-              </section>
-              <section class="footer__links">
-                <p class="link__vk">ВК</p>
-                <p class="link__youtube">Ютуб</p>
-              </section>
+           <p class="copy__logo">© VЁRSTKA</p>
+            <ul class="footer__links">
+              <a class="social__links" href="#0">ВК</a>
+              <a class="social__links" href="#0">Ютуб</a>
+            </ul>
         </footer>
   </body>
 </html>
